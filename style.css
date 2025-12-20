@@ -1,0 +1,24 @@
+body {
+    font-family: 'Cairo';
+}
+
+.block {
+    background: dark red;
+}
+
+.inline-block {
+    display: inline-block;
+    background: yello;
+}
+
+.text {
+    font-size: 16px;
+    color: green;
+}
+
+.box {
+    background: gray;
+    padding: 10px;
+    border: 2px solid black;
+    margin: 10px;
+}
