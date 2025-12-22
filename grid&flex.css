@@ -1,0 +1,19 @@
+.page {
+  display: grid;
+}
+
+.header {
+  display: flex;
+}
+
+.content {
+  display: grid;
+}
+
+.card {
+  display: flex;
+}
+
+.footer {
+  display: flex;
+}
