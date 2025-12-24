@@ -1,35 +1,82 @@
 body {
   height: 100vh;
+  margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   background: #f2f2f2;
+  font-family: Arial, sans-serif;
 }
 
 .box {
   width: 300px;
   height: 300px;
   background-color: #3498db;
-  transition: all 0.5s ease;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 20px;
+
+  animation: fadeScale 0.8s ease, pulse 2s infinite;
+  transition: 
+    width 0.5s ease,
+    height 0.5s ease,
+    background-color 0.5s ease,
+    transform 0.5s ease;
 }
+
+@keyframes fadeScale {
+  from {
+    opacity: 0;
+    transform: scale(0.7);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 @media (min-width: 1025px) {
   .box {
     width: 300px;
     height: 300px;
     background-color: #3498db;
+    transform: rotate(0deg);
   }
 }
+
 @media (max-width: 1024px) and (min-width: 768px) {
   .box {
     width: 220px;
     height: 220px;
     background-color: #2ecc71;
+    transform: rotate(5deg);
   }
 }
+
 @media (max-width: 767px) {
   .box {
     width: 150px;
     height: 150px;
     background-color: #e74c3c;
+    transform: rotate(-5deg);
   }
 }
+
