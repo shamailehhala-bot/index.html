@@ -5,10 +5,7 @@
     <title>Flight Booking</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-    <h1> Hala's SkyTravel </h1>
 
     <nav>
         <h2>Hala's SkyTravel</h2>
@@ -28,31 +25,24 @@
             <p>Your optimal and most comfortable choice for your favorite destination..</p>
 
             <div class="search-box">
-                <input type="text" id="from" placeholder="From">
-                <input type="text" id="to" placeholder="To">
+                <input type="text" placeholder="From">
+                <input type="text" placeholder="To">
                 <input type="date">
                 <input type="date">
-                <input type="number" id="tickets" placeholder="Number of Tickets">
-                <button onclick="bookTicket()">Search</button>
+                <button>Search</button>
             </div>
         </div>
     </section>
-
-    <button onclick="bookTicket()"> order now!</button>
-
-    <p id="message"></p>
 
     <section class="features">
         <div class="feature">
             <h3>Best Prices</h3>
             <p>We compare millions of flights to get you the best deal.</p>
         </div>
-
         <div class="feature">
             <h3>Fast Booking</h3>
             <p>Book your ticket in minutes with our simple interface.</p>
         </div>
-
         <div class="feature">
             <h3>Secure Payments</h3>
             <p>Your data and payments are fully protected.</p>
@@ -62,26 +52,8 @@
     <footer>
         <p>© 2025 Hala's SkyTravel. All rights reserved.</p>
     </footer>
+    <script src="myapp.js"></script>
 
-    <script>
-        function bookTicket() {
-            const from = document.getElementById("from").value;
-            const to = document.getElementById("to").value;
-            const tickets = document.getElementById("tickets").value;
-            const message = document.getElementById("message");
-
-            if (from === "" || to === "" || tickets === "") {
-                message.textContent = "⚠️ Please fill all required fields";
-                message.style.color = "red";
-            } else {
-                message.textContent =
-                    "✅ Booking Confirmed! From: " + from +
-                    " | To: " + to +
-                    " | Tickets: " + tickets;
-                message.style.color = "green";
-            }
-        }
-    </script>
 
 </body>
 </html>
