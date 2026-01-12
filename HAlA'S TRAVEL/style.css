@@ -147,3 +147,57 @@ footer {
 footer {
     animation-delay: 0.6s;
 }
+.form-message {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+    .form-message.error {
+        color: red;
+    }
+
+    .form-message.success {
+        color: green;
+    }
+.marquee {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    animation: marqueeAnim 8s linear infinite;
+    padding-left: 100%;
+    box-sizing: content-box;
+}
+
+@keyframes marqueeAnim {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+#flightsList {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.marquee-item {
+    display: inline-block;
+    padding: 0 2rem;
+    white-space: nowrap;
+    animation: marqueeScroll 15s linear infinite;
+    margin-right: 2rem;
+}
+
+@keyframes marqueeScroll {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
