@@ -18,6 +18,7 @@
         </div>
     </nav>
 
+
     <section class="hero">
         <div class="hero-text">
             <h1>Book Flights Easily</h1>
@@ -54,12 +55,25 @@
             <p>Your data and payments are fully protected.</p>
         </div>
     </section>
+    <section class="features">
+        <div class="feature">
+            <h3>Async Data Viewer</h3>
+            <button id="loadUsersBtn">Load Users</button>
+
+            <p id="loadingMessage"></p>
+            <p id="errorMessage"></p>
+
+            <ul id="usersList"></ul>
+        </div>
+    </section>
+
 
     <footer>
         <p>© 2025 Hala's SkyTravel. All rights reserved.</p>
     </footer>
 
     <script src="myapp.js"></script>
+    <script src="async-viewer.js"></script>
 
 </body>
 </html>

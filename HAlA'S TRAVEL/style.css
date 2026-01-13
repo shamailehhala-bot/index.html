@@ -190,6 +190,16 @@ footer {
     animation: marqueeScroll 15s linear infinite;
     margin-right: 2rem;
 }
+#usersList li {
+    margin: 8px 0;
+    font-weight: bold;
+}
+
+#loadingMessage {
+    color: blue;
+    font-weight: bold;
+}
+
 
 @keyframes marqueeScroll {
     0% {
@@ -200,4 +210,5 @@ footer {
         transform: translateX(-100%);
     }
 }
+
 
